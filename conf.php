@@ -12,7 +12,7 @@ $conf['db_type'] = "pdo";
 $conf['db_host'] = "localhost";
 $conf['db_user'] = "root";
 $conf['db_pass'] = "3030chen";
-$conf['db_name'] = "pro";
+$conf['db_name'] = "taskapp";
 
 // Pet-specific configuration
 $conf['welcome_email_subject'] = "Welcome to Your Pet's Paw-tfolio!";

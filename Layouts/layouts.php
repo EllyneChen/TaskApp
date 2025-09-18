@@ -44,8 +44,11 @@ class layouts {
                 case 'mailer':
                     $errorMessage = "Message could not be sent. Please try again later.";
                     break;
+                case 'database':
+                    $errorMessage = "Database error. Please try again.";
+                    break;
                 default:
-                    $errorMessage = "An error occurred. Please try again.";
+                    $errorMessage = "This pet already has a paw-tfolio!";
             }
             echo '<div class="error-message">';
             echo $errorMessage;

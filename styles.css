@@ -195,3 +195,77 @@ body {
     font-size: 2rem;
     color: #8bc34a;
 }
+
+
+/* Users List Styles */
+.users-list {
+    list-style-type: none;
+    padding: 0;
+    counter-reset: pet-counter;
+}
+
+.users-list li {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    padding-left: 60px; /* Space for the number */
+}
+
+.users-list li::before {
+    counter-increment: pet-counter;
+    content: counter(pet-counter);
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #8bc34a;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.users-list li strong {
+    color: #6b4e3d;
+}
+
+.users-list li:nth-child(odd) {
+    background-color: #f0f8ff;
+}
+
+/* Additional styles for the users list page */
+.users-list-container {
+    margin: 20px 0;
+}
+
+.users-list-container h2 {
+    color: #6b4e3d;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Back button style */
+.back-button {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #6b4e3d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #8bc34a;
+    color: white;
+}
